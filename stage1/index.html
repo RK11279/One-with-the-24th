@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The First Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container for all content -->
+  <div class="container">
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <h1>Welcome, Challenger!</h1>
+      <p>
+        "Ah, so you've chosen the path of bravery! 🕵️‍♂️
+Good choice! But beware, this quest isn’t for the faint of heart. Ahead lie puzzles and mysteries, each holding a cryptic clue to something you’ve been wanting for a while… your birthday present! 🎁
+<br><br>
+        You’ll need your sharpest wits, your cleverest moves, and maybe a bit of luck to decipher the clues. Each stage you conquer will bring you closer to unraveling the big surprise.
+      </p>
+      <button class="start-btn" onclick="startChallenge()">Begin the Quest</button>
+    </div>
+
+    <!-- Riddle Section (Hidden Initially) -->
+    <div id="riddle-section" class="riddle-section hidden">
+      <p class="riddle-text">
+        <i>
+          "I house ideas and machinery alike,<br>
+          Where innovation takes its fearless flight.<br>
+          I guide the skies, yet I’m grounded near,<br>
+          A coder’s haven, and an engineer’s sphere.<br><br>
+          Within my walls, a language thrives,<br>
+          Solving puzzles where logic drives.<br>
+          Crack the code, and you shall tell,<br>
+          The name I go by—think and dwell."
+        </i>
+      </p>
+
+      <!-- Answer Input -->
+      <div class="input-section">
+        <input type="text" id="answer" placeholder="Type your answer here">
+        <button class="submit-btn" onclick="checkAnswer()">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
