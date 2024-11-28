@@ -1,11 +1,10 @@
 // Function to start the challenge and reveal the riddle section
 function startChallenge() {
-  // Hide the pop-up and welcome section
-  document.getElementById("popUp").style.display = "none";
-  document.getElementById("welcomeSection").style.display = "none"; // Optional, if you want to hide it explicitly
-
   // Show the riddle section by removing the 'hidden' class
   document.getElementById("riddle-section").classList.remove("hidden");
+  
+  // Optionally, hide the "Welcome" section or other initial content
+  document.querySelector(".welcome-section").style.display = "none";
 }
 
 // Function to check the user's answer and proceed or retry
@@ -23,3 +22,4 @@ function checkAnswer() {
     alert("Now, CHATGPT can't help you.. can it 😂!");
   }
 }
+
