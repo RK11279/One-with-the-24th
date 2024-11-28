@@ -1,147 +1,60 @@
-/* General Styling */
-body {
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
-  color: #f0f0f0; /* Light text color */
-  background: linear-gradient(to right, #232526, #414345); /* Optional: gradient for extra texture */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden; /* Prevent scrollbars if content overflows */
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-/* Background Image with Transparency */
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('file:///D:/Quest/assests/LAB.jpg'); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the entire screen */
-  background-position: center;
-  opacity: 0.3; /* Controls the transparency of the image */
-  z-index: -1; /* Places the image behind the content */
-}
-
-/* Typewriter Effect */
-#typewriter {
-  font-size: 1.2em;
-  margin: 20px auto;
-  text-align: center;
-  width: 80%;
-  line-height: 1.5;
-  border-right: 2px solid #fff;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 5s steps(50, end), blink 0.5s step-end infinite alternate;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
+/* Glitch background */
+#glitch-container {
+    position: relative;
+    height: 100vh;
     width: 100%;
-  }
+    background-image: url('file:///D:/Quest/assests/glitch.gif'); /* Use your glitch GIF in the assets folder */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes blink {
-  from {
-    border-color: transparent;
-  }
-  to {
-    border-color: #fff;
-  }
+/* Pop-up box styling */
+#pop-up {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
 }
 
-/* Pop-up Overlay */
-.pop-up {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  z-index: 999;
-  width: 80%;
-  max-width: 600px;
-  display: block; /* Show the pop-up initially */
+/* Heading styling */
+#pop-up h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Welcome Section */
-.welcome-section {
-  text-align: center;
-  margin-top: 20px;
+/* Button styling */
+#accept, #reject {
+    background-color: #ff3f3f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
 }
 
-/* Riddle Section */
-.riddle-section {
-  text-align: center;
-  margin-top: 20px;
+#accept {
+    background-color: #28a745; /* Green for Accept */
 }
 
-/* Hidden Elements */
-.hidden {
-  display: none;
+#reject {
+    background-color: #dc3545; /* Red for Reject */
 }
 
-/* Button Styling */
-.start-btn, .submit-btn {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  color: #000;
-  background-color: #ffcc00;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+#accept:hover, #reject:hover {
+    opacity: 0.8;
 }
-
-.start-btn:hover, .submit-btn:hover {
-  background-color: #ff9900;
-}
-
-/* Input Section */
-.input-section {
-  margin-top: 20px;
-}
-
-input[type="text"] {
-  padding: 10px;
-  font-size: 1em;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  width: 50%;
-  background-color: transparent;
-  color: white;
-}
-
-input[type="text"]:focus {
-  border-color: #ffcc00;
-  outline: none;
-}
-
-/* General Layout Styling */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-button:focus {
-  outline: none; /* Remove outline on button focus */
-}
-
-
