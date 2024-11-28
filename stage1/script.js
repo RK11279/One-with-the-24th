@@ -23,3 +23,13 @@ function checkAnswer() {
   }
 }
 
+// Wait for the page to load and then add event listeners
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the "Begin the Quest" button
+  const startBtn = document.getElementById("start-btn");
+  
+  // Add event listener to the button to start the challenge
+  startBtn.addEventListener("click", startChallenge);
+});
+
+
