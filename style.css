@@ -11,7 +11,7 @@ body, html {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('assests/glitch.gif'); /* Use your glitch GIF in the assets folder */
+    background-image: url('assets/glitch.gif'); /* Use your glitch GIF in the assets folder */
     background-size: cover;
     background-position: center;
     display: flex;
