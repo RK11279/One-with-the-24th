@@ -1,0 +1,60 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Glitch background */
+#glitch-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('file:///D:/Quest/assests/glitch.gif'); /* Use your glitch GIF in the assets folder */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pop-up box styling */
+#pop-up {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+}
+
+/* Heading styling */
+#pop-up h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+#accept, #reject {
+    background-color: #ff3f3f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#accept {
+    background-color: #28a745; /* Green for Accept */
+}
+
+#reject {
+    background-color: #dc3545; /* Red for Reject */
+}
+
+#accept:hover, #reject:hover {
+    opacity: 0.8;
+}
