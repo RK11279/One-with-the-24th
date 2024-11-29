@@ -1,7 +1,6 @@
 document.getElementById("accept").addEventListener("click", function () {
     localStorage.setItem('acceptComplete', true);
 window.location.href = 'stage1/index.html'; // Redirect to Stage 1
-
 });
 
 document.getElementById("reject").addEventListener("click", function () {
