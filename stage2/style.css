@@ -1,0 +1,118 @@
+/* stage2.css */
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background: url('../assets/star.jpg') no-repeat center center fixed; /* Starry background */
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+/* Portal Container */
+.portal-container {
+  position: relative;
+  top: 20%;
+  animation: fadeIn 2s;
+}
+
+/* Glowing Portal */
+.portal {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
+  box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.5);
+  animation: pulse 3s infinite;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portal:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 70px 30px rgba(255, 255, 255, 0.8);
+}
+
+/* Riddle Section */
+.riddle-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  display: none; /* Hidden initially */
+  animation: fadeIn 1.5s;
+}
+
+.riddle-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+
+/* Input Field and Button */
+input#answer {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: #121212;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #ff9d00;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 157, 0, 0.7);
+  transition: background 0.3s ease-in-out, transform 0.3s;
+}
+
+button:hover {
+  background: #ff7d00;
+  transform: scale(1.05);
+}
+
+/* Success Message */
+.success-message {
+  display: none; /* Hidden initially */
+  font-size: 20px;
+  color: #ffd700;
+  animation: fadeIn 2s;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px 30px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
