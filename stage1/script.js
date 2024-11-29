@@ -16,7 +16,8 @@ function checkAnswer() {
     alert("Hmmm ... Kashish's smartness shouldn't be underestimated.😏 But I hope this time you didn't need to ask for anyone's help in this too😉🤣");
 
     // Redirect to the next page (adjust the URL as needed)
-    window.location.href = "stage2.html";
+    localStorage.setItem('stage1Complete', true);
+ window.location.href = 'stage2.html'; // Redirect to Stage 2
   } else {
     // Provide feedback if the answer is incorrect
     alert("Now, CHATGPT can't help you.. can it 😂!");
