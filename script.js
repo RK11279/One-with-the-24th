@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.setItem('acceptComplete', true);
     
     // Redirect to Stage 1 after acceptance
-    window.location.href = 'stage1.html';  // Redirect to Stage 1
+    window.location.href = 'stage1/index.html';  // Redirect to Stage 1
   });
 
   // If the user rejects
