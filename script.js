@@ -1,5 +1,7 @@
 document.getElementById("accept").addEventListener("click", function () {
-    window.location.href = "stage1/index.html";  // Link to the second stage page
+    localStorage.setItem('acceptComplete', true);
+window.location.href = 'stage1.html'; // Redirect to Stage 1
+
 });
 
 document.getElementById("reject").addEventListener("click", function () {
