@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Mark stage 1 as complete and redirect to Stage 2
       localStorage.setItem('stage1Complete', true);
-      window.location.href = 'stage2.html';  // Redirect to Stage 2
+      window.location.href = 'stage2/index.html';  // Redirect to Stage 2
     } else {
       alert("Now, CHATGPT can't help you.. can it 😂!");
     }
