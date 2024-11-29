@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Check if stage 1 is already completed (via localStorage)
   if (localStorage.getItem('stage1Complete') === 'true') {
     // Redirect to stage 2 if stage 1 is already completed
-    window.location.href = 'stage2.html';
+    window.location.href = 'stage2/index.html';
   }
 
   // Start the challenge and reveal the riddle
